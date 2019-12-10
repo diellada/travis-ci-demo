@@ -1,1 +1,7 @@
 language: java
+
+# changes what code runs remotely on the server
+script: mvn test -B
+
+# sets operating system of virtual machine
+os: windows
