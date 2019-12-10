@@ -4,4 +4,17 @@ language: java
 script: mvn test -B
 
 # sets operating system of virtual machine
-os: windows
+os:
+  - linux
+  - osx
+
+jdk: oraclejdk8
+
+branches:
+  only:
+    - master
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: <API_KEY_ISI>
